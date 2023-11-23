@@ -1,0 +1,101 @@
+@import url('reset.css');
+
+body {
+  background-color: #6d1818; 
+}
+
+.title {
+  color: white;
+  text-align: center;
+  font-family: 'Pacifico', cursive; 
+  margin-top: 20px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.gallery img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease-in-out;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow: auto;
+}
+
+.modal-image {
+  width: 80%;
+  margin: auto;
+  display: block;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.modal-image:hover {
+  transform: scale(1.1);
+}
+
+.modal-details {
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.close {
+  color: white;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+
+/* footer section */
+
+ 
+  .reference {
+    background-color: #242325; 
+    color: white;
+    padding: 1px;
+    text-align: center;
+  }
+  
+  .reference a {
+    color: #f8f8f8; 
+    text-decoration: none;
+  }
+  
+  .reference a:hover {
+    text-decoration: underline;
+    color:red
+  }
+  
